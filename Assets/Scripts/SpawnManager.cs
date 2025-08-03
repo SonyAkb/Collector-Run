@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-//using System.Diagnostics;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -48,7 +47,6 @@ public class SpawnManager : MonoBehaviour
     public void RemoveCoin(GameObject coin) 
     {
         if (coin == null) return;
-
 
         Debug.Log("-монета" + " сейчас всего монет: " + coinsActive.Count);
         coinsActive.Remove(coin); // удаляю монету которую собрали
