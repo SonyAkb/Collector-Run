@@ -1,23 +1,29 @@
+п»їusing System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private SpawnManager spawnManager;
-    void Start()
-    {
-        spawnManager = FindObjectOfType<SpawnManager>();
-    }
+    //private SpawnManager spawnManager;
+    //void Start()
+    //{
+    //    spawnManager = FindObjectOfType<SpawnManager>();
+    //}
+
+    public Action OnCoinCollected; //СЃРѕР±С‹С‚РёРµ - РјРѕРЅРµС‚Сѓ СЃРѕР±СЂР°Р»Рё
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Столкновение любого объекта с монетой");
-        if (other.CompareTag("Player")) //если столкнулись с игроком
+        //Debug.Log("РЎС‚РѕР»РєРЅРѕРІРµРЅРёРµ Р»СЋР±РѕРіРѕ РѕР±СЉРµРєС‚Р° СЃ РјРѕРЅРµС‚РѕР№");
+        if (other.CompareTag("Player")) //РµСЃР»Рё СЃС‚РѕР»РєРЅСѓР»РёСЃСЊ СЃ РёРіСЂРѕРєРѕРј
         {
-            Debug.Log("Монетка собрана!");
-            spawnManager.RemoveCoin(other.gameObject);
-            Destroy(gameObject);//удаляем монету
+            Debug.Log("РњРѕРЅРµС‚РєР° СЃРѕР±СЂР°РЅР°!");
+            //spawnManager.RemoveCoin(gameObject);
+            OnCoinCollected?.Invoke();
+
+
+            Destroy(gameObject);//СѓРґР°Р»СЏРµРј РјРѕРЅРµС‚Сѓ
         }
         
     }

@@ -1,34 +1,56 @@
+п»їusing System;
 using System.Collections;
 using System.Collections.Generic;
+//using System.Diagnostics;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject coinPrefab; //шаблон для всех монет
-    public float spawnTime = 2f; //новые монеты генерируются через это время
-    public Vector2 spawnAreaMin; //область спавна (лево низ)
-    public Vector2 spawnAreaMax; //область спавна (право верх)
-    public int maxCoins = 10; //максимальное количество монет на карте 
+    public GameObject[] coinPrefab; //С€Р°Р±Р»РѕРЅ РґР»СЏ РІСЃРµС… РјРѕРЅРµС‚
+    public float spawnTime = 2f; //РЅРѕРІС‹Рµ РјРѕРЅРµС‚С‹ РіРµРЅРµСЂРёСЂСѓСЋС‚СЃСЏ С‡РµСЂРµР· СЌС‚Рѕ РІСЂРµРјСЏ
+    public Vector2 spawnAreaMin = new Vector2(-9.5f, -4.0f); // РѕР±Р»Р°СЃС‚СЊ СЃРїР°РІРЅР°
+    public Vector2 spawnAreaMax = new Vector2(9.5f, 4.0f); // РѕР±Р»Р°СЃС‚СЊ СЃРїР°РІРЅР°
+    public int maxCoins = 10; //РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРЅРµС‚ РЅР° РєР°СЂС‚Рµ 
 
-    public List<GameObject> coinsActive = new List<GameObject>();//список всех монет которые активны (их еще не собрал игрок)
+    public List<GameObject> coinsActive = new List<GameObject>();//СЃРїРёСЃРѕРє РІСЃРµС… Р°РєС‚РёРІРЅС‹С… РјРѕРЅРµС‚
 
     void Start()
     {
-        InvokeRepeating("TrySpawnCoin", 0f, spawnTime); //вызываю метод который спавнит монетки
+        InvokeRepeating("TrySpawnCoin", 0f, spawnTime); //СЃРїР°РІРЅ РјРѕРЅРµС‚
     }
 
     void TrySpawnCoin()
     {
-        if (coinsActive.Count < 10)
+        if (coinsActive.Count < maxCoins && coinPrefab.Length > 0)
         {
-            Vector2 spawnPos = new Vector2(Random.Range(spawnAreaMin.x, spawnAreaMax.x), Random.Range(spawnAreaMin.y, spawnAreaMax.y));
-            GameObject newCoin = Instantiate(coinPrefab, spawnPos, Quaternion.identity);
-            coinsActive.Add(newCoin); //добавляем новую активную монету
-        } 
+
+            if (coinPrefab == null || coinPrefab.Length == 0)
+            {
+                Debug.LogError("РќРµС‚ С€Р°Р±Р»РѕРЅР° РґР»СЏ РјРѕРЅРµС‚С‹!");
+                return;
+            }
+            Debug.Log("+РјРѕРЅРµС‚Р°");
+            GameObject randomPrefab = coinPrefab[UnityEngine.Random.Range(0, coinPrefab.Length)];
+
+            Vector2 spawnPos = new Vector2(UnityEngine.Random.Range(spawnAreaMin.x, spawnAreaMax.x), UnityEngine.Random.Range(spawnAreaMin.y, spawnAreaMax.y));
+
+            GameObject newCoin = Instantiate(randomPrefab, spawnPos, Quaternion.identity);
+            coinsActive.Add(newCoin); //РґРѕР±Р°РІР»СЏСЋ РЅРѕРІСѓСЋ РјРѕРЅРµС‚Сѓ
+
+            Coin coinScript = newCoin.GetComponent<Coin>(); //РѕС‚СЃР»РµР¶РёРІР°РµС‚ СѓРґР°Р»РµРЅРёРµ РјРѕРЅРµС‚С‹
+            if (coinScript != null)
+            {
+                coinScript.OnCoinCollected += () => RemoveCoin(newCoin);
+            }
+        }
     }
 
-    public void RemoveCoin(GameObject coin) //вызывается когда монету подбирают
+    public void RemoveCoin(GameObject coin) 
     {
-        coinsActive.Remove(coin); // удаляю монету которую нашли
+        if (coin == null) return;
+
+
+        Debug.Log("-РјРѕРЅРµС‚Р°" + " СЃРµР№С‡Р°СЃ РІСЃРµРіРѕ РјРѕРЅРµС‚: " + coinsActive.Count);
+        coinsActive.Remove(coin); // СѓРґР°Р»СЏСЋ РјРѕРЅРµС‚Сѓ РєРѕС‚РѕСЂСѓСЋ СЃРѕР±СЂР°Р»Рё
     }
 }
