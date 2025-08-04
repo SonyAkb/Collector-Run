@@ -17,8 +17,10 @@ public class Coin : MonoBehaviour
             GameManager.Instance.AddScore(1); //+1 очко
             OnCoinCollected?.Invoke();
 
+            AudioManager.Instance.PlayRandomCoinSound();
+
             gameObject.SetActive(false);
-            //Destroy(gameObject);//удаляем монету
+
         }
         
     }

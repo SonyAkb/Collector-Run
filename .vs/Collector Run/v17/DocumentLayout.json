@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Unity\\Collector Run\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\collector run\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\collector run\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
+              "ToolTip": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T13:04:57.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MenuManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\MenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
@@ -46,11 +63,12 @@
               "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T07:58:02.521Z"
+              "WhenOpened": "2025-08-04T07:58:02.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -62,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SpawnManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\SpawnManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnManager.cs",
@@ -74,19 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Coin.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\Coin.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coin.cs",
               "ToolTip": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\Coin.cs",
               "RelativeToolTip": "Assets\\Scripts\\Coin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T10:42:11.633Z"
+              "WhenOpened": "2025-08-03T10:42:11.633Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
