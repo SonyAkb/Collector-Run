@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     private int score = 0; //первоначальный счет
-    private float remainingTime = 10f;//первоначальное время
+    private float remainingTime = 60f;//первоначальное время
     private bool isGameActive = true; //флаг игры - игра идет или закончилась
 
     void Start()
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
 
-        remainingTime = 10f;
+        remainingTime = 60f;
         score = 0;
         scoreText.text = "Монет собрано: 0";
 

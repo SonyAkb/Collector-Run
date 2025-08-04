@@ -814,13 +814,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342bc3a934b83a249bd8348df9ad64a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab:
-  - {fileID: 7003171944109209567, guid: a1b52c29f9ed78a4385c8f99316a469c, type: 3}
+  coinPools:
+  - prefab: {fileID: 7003171944109209567, guid: a1b52c29f9ed78a4385c8f99316a469c, type: 3}
+    poolSize: 2
+    pooledObjects: []
+  - prefab: {fileID: 5171920070733691534, guid: 5711539dedfacec46a44714f958d9760, type: 3}
+    poolSize: 2
+    pooledObjects: []
   spawnTime: 2
   spawnAreaMin: {x: -9.5, y: -4}
   spawnAreaMax: {x: 9.5, y: 4}
   maxCoins: 10
-  coinsActive: []
+  activeCoins: []
 --- !u!4 &1058399900
 Transform:
   m_ObjectHideFlags: 0
@@ -1667,7 +1672,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.095688, y: -3.164888}
+  m_Offset: {x: -5.101769, y: -3.1803656}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1678,7 +1683,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22.293896, y: 10.028947}
+  m_Size: {x: 22.281734, y: 9.997992}
   m_EdgeRadius: 0
 --- !u!4 &1887697834
 Transform:
@@ -1801,7 +1806,7 @@ Transform:
   m_GameObject: {fileID: 1965757436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1.1607, y: 1.1607, z: 1.1607}
+  m_LocalScale: {x: 1.1633697, y: 1.1633697, z: 1.1633697}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

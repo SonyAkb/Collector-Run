@@ -12,13 +12,13 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player")) //если столкнулись с игроком
         {
-            Debug.Log("Монетка собрана!");
+            //Debug.Log("Монетка собрана!");
   
             GameManager.Instance.AddScore(1); //+1 очко
             OnCoinCollected?.Invoke();
 
-
-            Destroy(gameObject);//удаляем монету
+            gameObject.SetActive(false);
+            //Destroy(gameObject);//удаляем монету
         }
         
     }
