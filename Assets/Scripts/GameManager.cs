@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        Instance = this; 
+        Instance = this;
     }
 
     void Update()
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         timerText.text = $"Время: {(int)remainingTime}"; //вывожу
 
         if (remainingTime <= 0)//время закончилось
-        { 
+        {
             EndGame();
         }
     }
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
     {
-        if (endGameText != null) 
+        if (endGameText != null)
         {
             endGameText.text = $"Игра окончена! Монет собрано {score}";
         }
@@ -56,10 +56,10 @@ public class GameManager : MonoBehaviour
 
         isGameActive = false;
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0; 
+        Time.timeScale = 0;
     }
 
-    public void RestartGame()
+    public void RestartGame() //перезапуск игры
     {
         Time.timeScale = 1;
 
@@ -68,5 +68,11 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Монет собрано: 0";
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ReturnToMenu() //в главное меню
+    {
+        Time.timeScale = 1; 
+        SceneManager.LoadScene("MenuScene"); 
     }
 }
