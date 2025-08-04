@@ -18,13 +18,12 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     private int score = 0; //первоначальный счет
-    private float remainingTime = 60f;//первоначальное время
+    private float remainingTime = 10f;//первоначальное время
     private bool isGameActive = true; //флаг игры - игра идет или закончилась
 
     void Start()
     {
         UpdateBestScoreUI(); //данные о последнем рекорде
-        
     }
 
     void Awake()
@@ -76,6 +75,15 @@ public class GameManager : MonoBehaviour
             Debug.LogError("EndGameText не назначен в инспекторе!");
         }
 
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.StopMusic(); //безопасная остановка музыки
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager не найден!");
+        }
+
         isGameActive = false;
         gameOverPanel.SetActive(true);
         Time.timeScale = 0;
@@ -84,8 +92,7 @@ public class GameManager : MonoBehaviour
     public void RestartGame() //перезапуск игры
     {
         Time.timeScale = 1;
-
-        remainingTime = 60f;
+        remainingTime = 10f;
         score = 0;
         scoreText.text = "Монет собрано: 0";
 
@@ -96,6 +103,6 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.Save();
         Time.timeScale = 1; 
-        SceneManager.LoadScene("MenuScene"); 
+        SceneManager.LoadScene("MenuScene");
     }
 }

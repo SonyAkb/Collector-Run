@@ -77,10 +77,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (coin == null) return;
 
-        //Debug.Log("-монета" + " сейчас всего монет: " + activeCoins.Count);
-
         coin.SetActive(false); //монета неактивна теперь
-
         activeCoins.Remove(coin); // убираю монету которую собрали
     }
 
