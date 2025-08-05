@@ -23,9 +23,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        
         SceneTransitionManager.Instance.LoadSceneWithFade("GameScene");
-        //SceneManager.LoadScene("GameScene");
     }
 
     public void ResetRecord() //сброс рекорда

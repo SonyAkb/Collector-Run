@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Unity\\Collector Run\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\collector run\\assets\\scripts\\scenetransitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\collector run\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\parallaxbackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\parallaxbackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\scenetransitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenetransitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\collector run\\assets\\scripts\\transitioninitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\transitioninitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transitioninitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CE2D14E-8A03-7708-B48D-872374065D0A}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity\\Collector Run\\assets\\scripts\\audioloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,6 +59,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ParallaxBackground.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\ParallaxBackground.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ParallaxBackground.cs",
+              "ToolTip": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\ParallaxBackground.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ParallaxBackground.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T09:44:31.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TransitionInitializer.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\TransitionInitializer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TransitionInitializer.cs",
@@ -62,12 +78,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TransitionInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T08:38:13.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T08:38:13.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SceneTransitionManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\SceneTransitionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneTransitionManager.cs",
@@ -75,12 +90,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SceneTransitionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T08:01:54.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T08:01:54.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AudioLoader.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\AudioLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioLoader.cs",
@@ -92,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
@@ -104,19 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MenuManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\MenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
               "ToolTip": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\MenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwAoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T07:58:02.521Z"
+              "WhenOpened": "2025-08-04T07:58:02.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -124,12 +139,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAmwHIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T17:12:32.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T17:12:32.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SpawnManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\SpawnManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnManager.cs",
@@ -141,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Coin.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\Coin.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coin.cs",
@@ -153,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity\\Collector Run\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
