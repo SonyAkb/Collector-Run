@@ -45,9 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinSounds:
-  - {fileID: 8300000, guid: c0e941f470d54b54fa5f4dbfcc48eb73, type: 3}
-  - {fileID: 8300000, guid: d33be5d1034c532438e4c03be897d4f1, type: 3}
+  - {fileID: 8300000, guid: 9dc1a5aa54712864e804306e834b43e0, type: 3}
+  - {fileID: 8300000, guid: 8c586e84de8375c4b89e781062dc1db5, type: 3}
+  - {fileID: 8300000, guid: b67154ab842eadf4aa566d7287f53c91, type: 3}
   coinVolume: 0.5
   menuMusic: {fileID: 8300000, guid: 5a7371d0d2064b043a43885fdbce51ef, type: 3}
-  gameMusic: {fileID: 8300000, guid: ed11e407ee747f44a8022f77def5bb5f, type: 3}
-  bgVolume: 0.7
+  gameMusic: {fileID: 8300000, guid: 337d38b1e591ef14fb3b59b999cdb4ba, type: 3}
+  bgVolume: 0.2
