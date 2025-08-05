@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speedPlayer = 7f; //скорость игрока
     private Rigidbody2D rb; //отвечает за физику объекта
+    private bool canMove = true; //разрешено ли игроку двигаться
 
     private Vector2 lastNormalPosition; //последняя нормальная позицая - до выхода за границу
 
@@ -18,10 +19,25 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
+        if (!canMove)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
         float moveX = Input.GetAxis("Horizontal");//A/D, ←/→
         float moveY = Input.GetAxis("Vertical");//W/S, ↑/↓
 
         rb.velocity = new Vector2(moveX * speedPlayer, moveY * speedPlayer);//перемещение
+    }
+
+    public void SetCanMove(bool state)
+    {
+        canMove = state;
+        if (!state) 
+        { 
+            rb.velocity = Vector2.zero; 
+        }
     }
 
     void OnTriggerExit2D(Collider2D other) //при входе в триггер

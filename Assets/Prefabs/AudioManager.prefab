@@ -48,6 +48,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c0e941f470d54b54fa5f4dbfcc48eb73, type: 3}
   - {fileID: 8300000, guid: d33be5d1034c532438e4c03be897d4f1, type: 3}
   coinVolume: 0.5
-  menuMusic: {fileID: 8300000, guid: 6a80257b1bf0fe647b78ea8a6d4e32bc, type: 3}
+  menuMusic: {fileID: 8300000, guid: 5a7371d0d2064b043a43885fdbce51ef, type: 3}
   gameMusic: {fileID: 8300000, guid: ed11e407ee747f44a8022f77def5bb5f, type: 3}
   bgVolume: 0.7
