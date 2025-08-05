@@ -13,17 +13,19 @@ public class MenuManager : MonoBehaviour
         UpdateBestScoreUI();
     }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene("GameScene"); 
-    }
-
     void UpdateBestScoreUI() //обновление рекорда
     {
         if (bestScoreText != null)
         {
             bestScoreText.text = $"Рекорд: {PlayerPrefs.GetInt("BestScore", 0)}";
         }
+    }
+
+    public void StartGame()
+    {
+        
+        SceneTransitionManager.Instance.LoadSceneWithFade("GameScene");
+        //SceneManager.LoadScene("GameScene");
     }
 
     public void ResetRecord() //сброс рекорда

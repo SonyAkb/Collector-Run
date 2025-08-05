@@ -102,7 +102,16 @@ public class GameManager : MonoBehaviour
     public void ReturnToMenu() //в главное меню
     {
         PlayerPrefs.Save();
-        Time.timeScale = 1; 
-        SceneManager.LoadScene("MenuScene");
+        Time.timeScale = 1;
+        //SceneManager.LoadScene("MenuScene");
+        if (SceneTransitionManager.Instance != null)
+        {
+            SceneTransitionManager.Instance.LoadSceneWithFade("MenuScene");
+        }
+        else
+        {
+            // Если менеджера нет, загружаем сцену без эффекта
+            SceneManager.LoadScene("MenuScene");
+        }
     }
 }
