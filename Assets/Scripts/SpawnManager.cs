@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
 {
     public CoinPool[] coinPools; //массив контейнеров всех доступных монет
 
-    public float spawnTime = 2f; //новые монеты генерируются через это время
+    public float spawnTime = 1f; //новые монеты генерируются через это время
     public Vector2 spawnAreaMin = new Vector2(-9.5f, -4.0f); // область спавна
     public Vector2 spawnAreaMax = new Vector2(9.5f, 4.0f); // область спавна
     public int maxCoins = 10; //максимальное количество монет на карте 
@@ -46,14 +46,16 @@ public class SpawnManager : MonoBehaviour
             );
 
             coin.transform.position = spawnPos; //позиция
-            
-            coin.SetActive(true); //монета активна теперь
-            activeCoins.Add(coin);//добавляю новую монету
-
             Coin coinScript = coin.GetComponent<Coin>();//отслеживает устранение монеты
+
             if (coinScript != null)
             {
                 coinScript.progressBar.transform.position = spawnPos;
+                coinScript.lifetime = UnityEngine.Random.Range(2f, 10f);
+
+                coin.SetActive(true); //монета активна теперь
+                activeCoins.Add(coin);//добавляю новую монету
+
                 coinScript.OnCoinCollected += () => RemoveCoin(coin);
             }
         }

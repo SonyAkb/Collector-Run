@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int value) //обновление счетчика монет
     {
         score += value;
-        scoreText.text = $"Монет собрано: {score}";
+        scoreText.text = $"Цветов: {score}";
 
         if (score > PlayerPrefs.GetInt("BestScore", 0)) //обновляю рекорд
         {
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     {
         if (endGameText != null)
         {
-            endGameText.text = $"Игра окончена! Монет собрано {score}\nРекорд: {PlayerPrefs.GetInt("BestScore", 0)}";
+            endGameText.text = $"Игра окончена! Цветов собрано {score}\nРекорд: {PlayerPrefs.GetInt("BestScore", 0)}";
         }
         else
         {
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         remainingTime = 60f;
         score = 0;
-        scoreText.text = "Монет собрано: 0";
+        scoreText.text = "Цветов: 0";
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

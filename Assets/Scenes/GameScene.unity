@@ -902,9 +902,21 @@ MonoBehaviour:
   - prefab: {fileID: 2777906746384975327, guid: be2f00115b05cd245b21f33973f043c7, type: 3}
     poolSize: 2
     pooledObjects: []
+  - prefab: {fileID: 2622910186814015094, guid: fd14bd2fbf15f85409b8bdb2acef498a, type: 3}
+    poolSize: 2
+    pooledObjects: []
+  - prefab: {fileID: 3302151465067058794, guid: 0e78f6c8017f12046b7bb6aeff3bd709, type: 3}
+    poolSize: 2
+    pooledObjects: []
+  - prefab: {fileID: 6852166651542091758, guid: 0bbf39f8d6d80ee45a91f44215f73953, type: 3}
+    poolSize: 2
+    pooledObjects: []
+  - prefab: {fileID: 2910026361950790386, guid: 3bdd37c48fee867459fa7c9b697762e7, type: 3}
+    poolSize: 2
+    pooledObjects: []
   spawnTime: 2
-  spawnAreaMin: {x: -9.5, y: -4}
-  spawnAreaMax: {x: 9.5, y: 4}
+  spawnAreaMin: {x: -9, y: -4}
+  spawnAreaMax: {x: 9, y: 4}
   maxCoins: 10
   activeCoins: []
 --- !u!4 &1058399900

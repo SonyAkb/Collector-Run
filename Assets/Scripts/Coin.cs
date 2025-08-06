@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Coin : MonoBehaviour
 {
@@ -18,10 +19,11 @@ public class Coin : MonoBehaviour
 
     void OnEnable()
     {
-        currentLifetime = lifetime; //сброс тай мера при активации
+        currentLifetime = lifetime; //сброс таймера при активации
         if (progressBar != null) 
         { 
-            progressBar.fillAmount = 1f; 
+            progressBar.fillAmount = 1f;
+            progressBar.gameObject.SetActive(true);
         }
 
         if (effectsPool == null)
