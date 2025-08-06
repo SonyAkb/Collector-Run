@@ -44,9 +44,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.name == "Boundaries")
         {
-            Vector2 clampedPosition = new Vector2(
-                Mathf.Clamp(transform.position.x, -other.bounds.extents.x, other.bounds.extents.x),
-                Mathf.Clamp(transform.position.y, -other.bounds.extents.y, other.bounds.extents.y));
+            //Vector2 clampedPosition = new Vector2(
+            //    Mathf.Clamp(transform.position.x, -other.bounds.extents.x, other.bounds.extents.x),
+            //    Mathf.Clamp(transform.position.y, -other.bounds.extents.y, other.bounds.extents.y));
             transform.position = lastNormalPosition; //возврат в последнее нормальное положение
             rb.velocity = Vector2.zero; //сброс скорости
         }

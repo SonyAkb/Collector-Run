@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Coin : MonoBehaviour
@@ -9,14 +10,42 @@ public class Coin : MonoBehaviour
     public Action OnCoinCollected; //событие - монету собрали
     public ParticleSystem pickupEffectPrefab;
 
+    public float lifetime = 5f; //время жизни
+    public Image progressBar; //изображение пргрессбара
+    private float currentLifetime; //текущее время жизни
+
     private static List<ParticleSystem> effectsPool = new List<ParticleSystem>(); //пул эффектов
 
     void OnEnable()
     {
+        currentLifetime = lifetime; //сброс тай мера при активации
+        if (progressBar != null) 
+        { 
+            progressBar.fillAmount = 1f; 
+        }
+
         if (effectsPool == null)
         {
             effectsPool = new List<ParticleSystem>();
             SceneManager.sceneUnloaded += OnSceneUnloaded; //подписка на событие выгрузки сцены
+        }
+    }
+
+    void Update()
+    {
+        if (currentLifetime > 0)
+        {
+            currentLifetime -= Time.deltaTime;
+
+            if (progressBar != null)
+            {
+                progressBar.fillAmount = currentLifetime / lifetime; //обновляю прогрессбар
+            }
+        }
+        else
+        {
+            OnCoinCollected?.Invoke();
+            gameObject.SetActive(false); //время вышло (игрок не успел собрать монету) - убираю монету  
         }
     }
 

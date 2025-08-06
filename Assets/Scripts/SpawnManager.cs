@@ -46,12 +46,14 @@ public class SpawnManager : MonoBehaviour
             );
 
             coin.transform.position = spawnPos; //позиция
+            
             coin.SetActive(true); //монета активна теперь
             activeCoins.Add(coin);//добавляю новую монету
 
             Coin coinScript = coin.GetComponent<Coin>();//отслеживает устранение монеты
             if (coinScript != null)
             {
+                coinScript.progressBar.transform.position = spawnPos;
                 coinScript.OnCoinCollected += () => RemoveCoin(coin);
             }
         }
